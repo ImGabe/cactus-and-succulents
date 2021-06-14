@@ -1,0 +1,124 @@
+{
+    "plants": [
+        {
+            "name": "succulent-1",
+            "type": "succulents",
+            "value": "35.9",
+            "image": "https://i.imgur.com/Uwu8YMk.jpg"
+        },
+        {
+            "name": "succulent-2",
+            "type": "succulents",
+            "value": "25.9",
+            "image": "https://i.imgur.com/w3XOPu3.jpg"
+        },
+        {
+            "name": "succulent-3",
+            "type": "succulents",
+            "value": "65.9",
+            "image": "https://i.imgur.com/vfQVkoZ.jpg"
+        },
+        {
+            "name": "succulent-4",
+            "type": "succulents",
+            "value": "15.56",
+            "image": "https://i.imgur.com/7fpirO1.jpg"
+        },
+        {
+            "name": "succulent-5",
+            "type": "succulents",
+            "value": "28.9",
+            "image": "https://i.imgur.com/8ZqMlv8.png"
+        },
+        {
+            "name": "succulent-6",
+            "type": "succulents",
+            "value": "25.9",
+            "image": "https://i.imgur.com/dcXm6JU.jpg"
+        },
+        {
+            "name": "succulent-7",
+            "type": "succulents",
+            "value": "64",
+            "image": "https://i.imgur.com/0Ijhkk7.jpg"
+        },
+        {
+            "name": "succulent-8",
+            "type": "succulents",
+            "value": "22.9",
+            "image": "http://i.imgur.com/BRe0Sce.jpg"
+        },
+        {
+            "name": "succulent-9",
+            "type": "succulents",
+            "value": "85.9",
+            "image": "https://i.imgur.com/ULGoDeX.jpg"
+        },
+        {
+            "name": "succulent-10",
+            "type": "succulents",
+            "value": "53.25",
+            "image": "https://i.imgur.com/XQWokcA.jpg"
+        },
+        {
+            "name": "cactus-1",
+            "type": "cactus",
+            "value": "35.9",
+            "image": "https://i.imgur.com/jeTFFtE.jpg"
+        },
+        {
+            "name": "cactus-2",
+            "type": "cactus",
+            "value": "25.9",
+            "image": "https://i.imgur.com/XSFsNuL.jpg"
+        },
+        {
+            "name": "cactus-3",
+            "type": "cactus",
+            "value": "65.9",
+            "image": "https://i.imgur.com/JBtrMvM.jpg"
+        },
+        {
+            "name": "cactus-4",
+            "type": "cactus",
+            "value": "15.56",
+            "image": "https://i.imgur.com/evGns3Z.jpg"
+        },
+        {
+            "name": "cactus-5",
+            "type": "cactus",
+            "value": "28.9",
+            "image": "https://i.imgur.com/2e4gSCd.jpg"
+        },
+        {
+            "name": "cactus-6",
+            "type": "cactus",
+            "value": "25.9",
+            "image": "https://i.imgur.com/ENE1uhG.jpg"
+        },
+        {
+            "name": "cactus-7",
+            "type": "cactus",
+            "value": "64",
+            "image": "https://i.imgur.com/IfCHWLp.jpg"
+        },
+        {
+            "name": "cactus-8",
+            "type": "cactus",
+            "value": "22.9",
+            "image": "https://i.imgur.com/IbvPSLG.jpg"
+        },
+        {
+            "name": "cactus-9",
+            "type": "cactus",
+            "value": "85.9",
+            "image": "https://i.imgur.com/m2OWQf6.jpg"
+        },
+        {
+            "name": "cactus-10",
+            "type": "cactus",
+            "value": "53.25",
+            "image": "https://i.imgur.com/XKlXJEB.png"
+        }
+    ]
+}

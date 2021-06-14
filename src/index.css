@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pattaya&display=swap');
+
+:root {
+  --backgroud: #ededeb;
+  --green:  #679c67;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:after {
+  display: block;
+  content: '';
+
+  border-bottom: 2px solid #679c67;
+
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+a, a:visited {
+  color: black;
+}
+
+li a:not(.active):hover:after {
+  transform: scaleX(1); 
+}
+
+.active {
+  border-bottom: 2px solid #679c67;
+}
+
+.navbar-home {
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  height: 10vh;
+  width: 100%;
+
+  z-index: 1;
+}
+
+.navbar-items {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 10vh;
+  z-index: 1;
+}
+
+.navbar-solid {
+  background-color: #ededeb;
+}
+
+.title {
+  font-family: Pattaya, cursive, sans-serif, fantasy, monospace;
+  color: #679c67;
+  font-size: 50px;
+}
+
+.plants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 15vh;
+}
+
+.plant {
+  padding: 30px;
+}
+
+.plant-text, .plant-price {
+  text-align: center;
+}
+
+.plant-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.plant-text {
+  padding-top: 0.5em;
+}
+
+.plant-price {
+  padding-top: 1em;
+  color: gray;
+}
+
+.footer {
+  text-align: center;
+  height: 10vh;
+  width: 100%;
+  background-color: #679c67;
+}
+
+.footer p {
+  padding-top: 25px;
+}
+
+body {
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #679c67;
+  outline: 1px solid #679c67;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
