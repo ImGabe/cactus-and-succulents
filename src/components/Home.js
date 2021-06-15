@@ -12,7 +12,7 @@ function Home () {
     const res = await fetch('https://cactus-and-succulents.glitch.me/plants.json')
     const data = await res.json()
 
-    return data
+    return data.plants
   }
 
   useEffect(() => {
