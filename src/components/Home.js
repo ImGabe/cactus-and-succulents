@@ -9,7 +9,7 @@ function Home () {
   const [plants, setPlants] = useState([])
 
   const fetchPlants = async () => {
-    const res = await fetch('http://localhost:3000/plants')
+    const res = await fetch('https://cactus-and-succulents.glitch.me/plants.json')
     const data = await res.json()
 
     return data
