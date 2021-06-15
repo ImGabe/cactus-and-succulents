@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="navbar-items">
           <ul>
           <li><Link to="/?type=cactus">Cactus</Link></li>
-            <li><Link to="/?type=succulents">Succulents</Link></li>
+          <li><Link to="/?type=succulents">Succulents</Link></li>
             <li><Link to="/?type=">All</Link></li>
           </ul>
         </div>
