@@ -32,9 +32,6 @@ function App () {
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/plants">
-          <PlantPage plants={plants} />
-        </Route>
         <Route path="*">
           <NoMatch />
         </Route>
