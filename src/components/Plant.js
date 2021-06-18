@@ -11,9 +11,14 @@ const Plant = ({ plant }) => {
 
   return (
     <LazyLoad className="plant" height={250} offset={100} once>
-      <figure className="plant-figure">
-        <img className="plant-img" src={plant.image} alt={plant.type}/>
-      </figure>
+      <div className="container-img">
+        <figure className="plant-figure">
+          <img className="plant-img" src={plant.image} alt={plant.type} />
+        </figure>
+        <div className="overlay-plant">
+          <div className="overlay-text" >Buy</div>
+        </div>
+      </div>
       <div className="plant-text">
         <div className="plant-name">{plant.name}</div>
         <div className="plant-price">{formatter.format(plant.value)}</div>
