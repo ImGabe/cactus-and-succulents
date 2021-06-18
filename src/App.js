@@ -7,7 +7,6 @@ import {
 
 import Home from './components/Home'
 import About from './components/About'
-import PlantPage from './components/Cart'
 import NoMatch from './components/NoMatch'
 
 function App () {
