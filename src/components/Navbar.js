@@ -1,43 +1,28 @@
-import React, { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import React from 'react'
+import { useLocation } from 'react-router-dom'
+import NavbarLink from './NavbarLink'
+import { CgShoppingCart } from 'react-icons/cg'
 
 const Navbar = () => {
-  const { pathname } = useLocation()
+  const { pathname, search } = useLocation()
+  const query = new URLSearchParams(search)
+  const type = query.get('type')
 
-  const [show, setShow] = useState(false)
-  const navbarControl = () => setShow(window.scrollY > 500)
-
-  window.addEventListener('scroll', navbarControl)
+  const searchFilter = ({ target }) => { if (type === target.text.toLowerCase()) { window.location.href = window.location.origin } }
 
   return (
     <div className="navbar">
-      <div className={`navbar-home ${show && 'navbar-solid'}`}>
-        <ul>
-          <li>
-            {
-              pathname === '/'
-                ? <Link to="/" className="active">Home</Link>
-                : <Link to="/">Home</Link>
-            }
-          </li>
-          <li>
-            {
-              pathname === '/about'
-                ? <Link to="/about" className="active">About</Link>
-                : <Link to="/about">About</Link>
-            }
-          </li>
-        </ul>
+      <div className="navbar-home">
+        <NavbarLink className="navbar-item" activeOnlyWhenExact={true} to="/" label="Home" />
+        <NavbarLink className="navbar-item" activeOnlyWhenExact={true} to="/about" label="About" />
       </div>
 
       {
         pathname === '/' &&
-        <div className="navbar-items">
-          <ul>
-          <li><Link to="/?type=cactus">Cactus</Link></li>
-          <li><Link to="/?type=succulents">Succulents</Link></li>
-            <li><Link to="/?type=">All</Link></li>
-          </ul>
+        <div className="navbar-filter">
+          <NavbarLink className="navbar-item" onClick={searchFilter} activeOnlyWhenExact={false} to="/?type=cactus" label="Cactus" />
+          <NavbarLink className="navbar-item" onClick={searchFilter} activeOnlyWhenExact={false} to="/?type=succulents" label="Succulents" />
+          <CgShoppingCart className="navbar-item" />
         </div>
       }
 
