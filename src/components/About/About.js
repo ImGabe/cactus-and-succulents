@@ -3,7 +3,7 @@ import React from 'react'
 import Navbar from '../Navbar/Navbar.js'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
-import Body from '../Body'
+import Body from '../Body/Body'
 
 function About () {
   return (
