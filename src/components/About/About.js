@@ -1,13 +1,13 @@
 import React from 'react'
 
-import Navbar from './Navbar/Navbar.js'
-import Header from './Header/Header'
-import Footer from './Footer/Footer'
-import Body from './Body'
+import Navbar from '../Navbar/Navbar.js'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
+import Body from '../Body'
 
 function About () {
   return (
-    <div className="About">
+    <div>
       <Navbar />
       <Header title="About" />
       <Body>

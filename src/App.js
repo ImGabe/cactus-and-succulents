@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom'
 
 import Home from './components/Home/Home'
-import About from './components/About'
+import About from './components/About/About'
 import NoMatch from './components/NoMatch'
 
 function App () {
