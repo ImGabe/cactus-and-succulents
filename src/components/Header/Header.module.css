@@ -2,7 +2,7 @@
 
 .title {
   font-family: Pattaya, cursive, sans-serif, fantasy, monospace;
-  color: #679c67;
+  color: #var(--green);
   font-size: 50px;
   margin-bottom: 100px;
 }

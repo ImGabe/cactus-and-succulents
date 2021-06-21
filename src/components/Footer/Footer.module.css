@@ -3,7 +3,7 @@
   height: 10vh;
   min-height: 65px;
   width: 100%;
-  background-color: #679c67;
+  background-color: #var(--green);
 }
 
 .contact {

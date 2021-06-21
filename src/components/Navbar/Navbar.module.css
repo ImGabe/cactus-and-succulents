@@ -2,18 +2,12 @@
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 54px;
-
+  background-color: var(--backgroud);
   display: flex;
   justify-content: space-between;
-
   z-index: 1;
-}
-
-.solid {
-  background-color: var(--backgroud);
 }
 
 .home,
@@ -35,13 +29,13 @@
   transition-duration: .25s;
   width: 100%;
 
-  border-bottom: 2px solid #679c67;
+  border-bottom: 2px solid var(--green);
   transform: scaleX(0);
   transform-origin: bottom;
 }
 
 .active {
-  border-bottom: 2px solid #679c67;
+  border-bottom: 2px solid var(--green);
 }
 
 .item:not(.active):hover:after {
@@ -53,5 +47,5 @@
 .item:hover,
 .item:active {
   text-decoration: none;
-  color: black;
+  color: var(--not-black);
 }
