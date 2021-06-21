@@ -3,7 +3,8 @@ import React from 'react'
 import { useLocation } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
-import Plant from './Plant'
+import Plant from '../Plant/Plant'
+import style from './Plants.module.css'
 
 function useQuery () {
   return new URLSearchParams(useLocation().search)
@@ -14,8 +15,8 @@ const Plants = ({ plants }) => {
   const type = query.get('type')
 
   return (
-    <div className="plants">
-      {plants.map((plant, index) => (!type || plant.type === type) && <Plant className="plants" key={index} plant={plant} />)}
+    <div className={style.plants}>
+      {plants.map((plant, index) => (!type || plant.type === type) && <Plant key={index} plant={plant} />)}
     </div>
   )
 }

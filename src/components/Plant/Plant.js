@@ -3,6 +3,8 @@ import React from 'react'
 import LazyLoad from 'react-lazyload'
 import PropTypes from 'prop-types'
 
+import style from './Plant.module.css'
+
 const Plant = ({ plant }) => {
   const formatter = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
@@ -10,18 +12,18 @@ const Plant = ({ plant }) => {
   })
 
   return (
-    <LazyLoad className="plant" height={250} offset={100} once>
-      <div className="container-img">
-        <figure className="plant-figure">
-          <img className="plant-img" src={plant.image} alt={plant.type} />
+    <LazyLoad className={style.plant} height={250} offset={100} once>
+      <div className={style.container}>
+        <figure className={style.figure}>
+          <img className={style.image} src={plant.image} alt={plant.type} />
         </figure>
-        <div className="overlay-plant">
-          <div className="overlay-text" >Buy</div>
+        <div className={style.overlay}>
+          <div className={style.text}>Buy</div>
         </div>
       </div>
-      <div className="plant-text">
-        <div className="plant-name">{plant.name}</div>
-        <div className="plant-price">{formatter.format(plant.value)}</div>
+      <div className={style.info}>
+        <div className={style.name}>{plant.name}</div>
+        <div className={style.price}>{formatter.format(plant.value)}</div>
       </div>
     </LazyLoad>
   )
