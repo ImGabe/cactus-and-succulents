@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Navbar from './Navbar/Navbar.js'
-import Header from './Header/Header'
-import Footer from './Footer/Footer'
+import Navbar from '../Navbar/Navbar.js'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 
 function NotFound () {
   return (
-    <div className="not-found">
+    <div>
       <Navbar/>
       <Header title="404"/>
       <Footer/>
