@@ -5,7 +5,7 @@ import styles from './Footer.module.css'
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <p>Contact: +55 (21) 98457xxxx</p>
+      <p className={styles.contact}>Contact: +55 (21) 98457xxxx</p>
     </div>
   )
 }
