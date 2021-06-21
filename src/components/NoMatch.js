@@ -2,7 +2,7 @@ import React from 'react'
 
 import Navbar from './Navbar/Navbar.js'
 import Header from './Header/Header'
-import Footer from './Footer'
+import Footer from './Footer/Footer'
 
 function NotFound () {
   return (
