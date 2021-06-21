@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Navbar from './Navbar/Navbar.js'
-import Header from './Header'
-import Plants from './Plants/Plants'
-import Footer from './Footer'
+import Navbar from '../Navbar/Navbar.js'
+import Header from '../Header'
+import Plants from '../Plants/Plants'
+import Footer from '../Footer'
 
 function Home ({ plants }) {
   return (
-    <div className="Home">
+    <div>
       <Navbar/>
       <Header title="Cactus and Succulents"/>
       <Plants plants={plants} />
