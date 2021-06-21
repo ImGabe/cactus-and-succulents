@@ -7,19 +7,11 @@
   --not-black: rgb(61, 61, 61);
 }
 
-
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.title {
-  font-family: Pattaya, cursive, sans-serif, fantasy, monospace;
-  color: #679c67;
-  font-size: 50px;
-  margin-bottom: 100px;
 }
 
 .body {

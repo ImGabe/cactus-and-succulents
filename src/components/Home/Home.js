@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Navbar from '../Navbar/Navbar.js'
-import Header from '../Header'
+import Header from '../Header/Header'
 import Plants from '../Plants/Plants'
 import Footer from '../Footer'
 

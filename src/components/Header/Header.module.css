@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pattaya&display=swap');
+
+.title {
+  font-family: Pattaya, cursive, sans-serif, fantasy, monospace;
+  color: #679c67;
+  font-size: 50px;
+  margin-bottom: 100px;
+}
