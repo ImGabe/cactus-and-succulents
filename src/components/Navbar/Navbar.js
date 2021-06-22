@@ -1,7 +1,10 @@
 import React from 'react'
+
 import { useLocation } from 'react-router-dom'
+
 import NavbarLink from './NavbarLink'
-import { CgShoppingCart } from 'react-icons/cg'
+import NavbarCart from './NavbarCart/NavbarCart'
+
 import style from './Navbar.module.css'
 
 const Navbar = () => {
@@ -14,16 +17,16 @@ const Navbar = () => {
   return (
     <div className={style.navbar}>
       <div className={style.home}>
-        <NavbarLink className={style.item}activeOnlyWhenExact={true} to="/" label="Home" />
-        <NavbarLink className={style.item}activeOnlyWhenExact={true} to="/about" label="About" />
+        <NavbarLink className={style.item} activeOnlyWhenExact={true} to="/" label="Home" />
+        <NavbarLink className={style.item} activeOnlyWhenExact={true} to="/about" label="About" />
       </div>
 
       {
         pathname === '/' &&
         <div className={style.filter} >
           <NavbarLink className={style.item} onClick={searchFilter} activeOnlyWhenExact={false} to="/?type=cactus" label="Cactus" />
-          <NavbarLink className={style.item}onClick={searchFilter} activeOnlyWhenExact={false} to="/?type=succulents" label="Succulents" />
-          <CgShoppingCart className={style.item}/>
+          <NavbarLink className={style.item} onClick={searchFilter} activeOnlyWhenExact={false} to="/?type=succulents" label="Succulents" />
+          <NavbarCart className={style.item} onClick={() => {}} />
         </div>
       }
 
