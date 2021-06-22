@@ -8,6 +8,7 @@ import {
 import Home from '../components/Home/Home'
 import About from '../components/About/About'
 import NoMatch from '../components/NoMatch/NoMatch'
+import '../reset.css'
 
 function App () {
   const [plants, setPlants] = useState([])
