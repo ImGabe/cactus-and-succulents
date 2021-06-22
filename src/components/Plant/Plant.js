@@ -1,11 +1,14 @@
 import React from 'react'
-
-import LazyLoad from 'react-lazyload'
 import PropTypes from 'prop-types'
+import LazyLoad from 'react-lazyload'
+import { useDispatch } from 'react-redux'
+
+import { addToCart } from '../Cart/cartSlice'
 
 import style from './Plant.module.css'
 
 const Plant = ({ plant }) => {
+  const dispatch = useDispatch()
   const formatter = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
     currency: 'BRL'
@@ -18,7 +21,7 @@ const Plant = ({ plant }) => {
           <img className={style.image} src={plant.image} alt={plant.type} />
         </figure>
         <div className={style.overlay}>
-          <div className={style.text}>Buy</div>
+          <div className={style.text} onClick={() => { dispatch(addToCart(plant)) }}>Buy</div>
         </div>
       </div>
       <div className={style.info}>

@@ -2,6 +2,34 @@
   cursor: pointer;
 }
 
-.dropdown {}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-.content {}
+.content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: var(--backgroud);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.item:hover {
+  color: var(--white);
+  background-color: var(--not-black);
+}
+
+.dropdown:hover .content {
+  display: block;
+}

@@ -1,14 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  plants: [
-    {
-      name: 'succulent-example',
-      type: 'succulents',
-      value: '20.7',
-      image: 'https://i.imgur.com/Uwu8YMk.jpg'
-    }
-  ]
+  plants: [],
+  amount: 0
 }
 
 export const ShoppingCartSlice = createSlice({
@@ -16,12 +10,12 @@ export const ShoppingCartSlice = createSlice({
   initialState,
 
   reducers: {
-    addToCart: (state, action) => { state.plants.push(action.payload) },
-    removeToCart: (state, action) => ({ ...state, plants: state.plants.filter(el => el.name !== action.payload.name) })
+    addToCart: (state, action) => { state.plants.push(action.payload); state.amount += 1 },
+    removeFromCart: (state, action) => ({ ...state, plants: state.plants.filter(el => el.name !== action.payload.name) })
   }
 })
 
-export const { addToCart, removeToCart } = ShoppingCartSlice.actions
-export const selectCartProducts = (state) => state.shoppingCart.plants
+export const { addToCart, removeFromCart } = ShoppingCartSlice.actions
+export const selectCartProducts = (state) => state.cart
 
 export default ShoppingCartSlice.reducer
