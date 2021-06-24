@@ -1,8 +1,19 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  plants: [],
-  amount: 0
+  plants: []
+}
+
+function _addToCart (state, action) {
+  // eslint-disable-next-line no-return-assign
+  const found = state.plants.some(plant => (plant.name === action.payload.name) ? plant.units += 1 : false)
+  if (!found) state.plants.push({ ...action.payload, units: 1 })
+}
+
+function _removeFromCart (state, action) {
+  return (action.payload.units < 1)
+    ? { ...state, plants: state.plants.map(plant => plant.name === action.payload.name && (plant.units -= 1)) }
+    : { ...state, plants: state.plants.filter(el => el.name !== action.payload.name) }
 }
 
 export const ShoppingCartSlice = createSlice({
@@ -10,12 +21,12 @@ export const ShoppingCartSlice = createSlice({
   initialState,
 
   reducers: {
-    addToCart: (state, action) => { state.plants.push(action.payload); state.amount += 1 },
-    removeFromCart: (state, action) => ({ ...state, plants: state.plants.filter(el => el.name !== action.payload.name) })
+    addToCart: _addToCart,
+    removeFromCart: _removeFromCart
   }
 })
 
 export const { addToCart, removeFromCart } = ShoppingCartSlice.actions
-export const selectCartProducts = (state) => state.cart
+export const selectCartProducts = (state) => state.cart.plants
 
 export default ShoppingCartSlice.reducer

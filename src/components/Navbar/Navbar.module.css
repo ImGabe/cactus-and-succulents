@@ -44,7 +44,6 @@
 
 .item:link,
 .item:visited,
-.item:hover,
 .item:active {
   text-decoration: none;
   color: var(--not-black);

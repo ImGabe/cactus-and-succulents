@@ -13,7 +13,6 @@ const Navbar = () => {
   const type = query.get('type')
 
   const searchFilter = ({ target }) => { if (type === target.text.toLowerCase()) { window.location.href = window.location.origin } }
-  // const isActive = (match, location) => { console.log(location.search, match) }
 
   return (
     <div className={style.navbar}>

@@ -27,7 +27,7 @@
 
 .item:hover {
   color: var(--white);
-  background-color: var(--not-black);
+  background-color: rgb(211, 211, 211);
 }
 
 .dropdown:hover .content {
